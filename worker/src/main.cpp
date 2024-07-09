@@ -11,7 +11,6 @@ static constexpr int ProducerChannelFd{ 4 };
 
 int main(int argc, char* argv[])
 {
-	MS_DEBUG_TAG(info, "[Snapcall] Running a modified version which allows all RTCP feedbacks from unknown IP:port (see worker/src/RTC/PlainTransport.cpp:1135)");
 	// Ensure we are called by our Node library.
 	if (!std::getenv("MEDIASOUP_VERSION"))
 	{

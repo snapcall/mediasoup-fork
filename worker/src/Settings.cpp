@@ -216,6 +216,8 @@ void Settings::PrintConfiguration()
 		logTagsStream << logTags.back();
 	}
 
+	MS_DEBUG_TAG(info, "[Snapcall] Running a modified version which allows all RTCP feedbacks from unknown IP:port
+						(see worker/src/RTC/PlainTransport.cpp:1135 and worker/src/RTC/PipeTransport.cpp:664)");
 	MS_DEBUG_TAG(info, "<configuration>");
 
 	MS_DEBUG_TAG(

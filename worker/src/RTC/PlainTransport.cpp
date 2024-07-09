@@ -1029,6 +1029,7 @@ namespace RTC
 
 			Channel::ChannelNotifier::Emit(this->id, "rtcptuple", data);
 		}
+		/* *
 		// If RTCP-mux verify that the packet's tuple matches our RTP tuple.
 		else if (this->rtcpMux && !this->tuple->Compare(tuple))
 		{
@@ -1043,6 +1044,7 @@ namespace RTC
 
 			return;
 		}
+		/* */
 
 		RTC::RTCP::Packet* packet = RTC::RTCP::Packet::Parse(data, static_cast<size_t>(intLen));
 

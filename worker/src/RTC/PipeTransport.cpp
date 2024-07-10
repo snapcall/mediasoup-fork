@@ -723,6 +723,7 @@ namespace RTC
 			return;
 		}
 
+		/* *
 		// Verify that the packet's tuple matches our tuple.
 		if (!this->tuple->Compare(tuple))
 		{
@@ -730,6 +731,7 @@ namespace RTC
 
 			return;
 		}
+		/* */
 
 		RTC::RTCP::Packet* packet = RTC::RTCP::Packet::Parse(data, len);
 
